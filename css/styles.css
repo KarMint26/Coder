@@ -42,6 +42,31 @@ body {
     padding: 3rem 7rem 0 7rem;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #007780;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    padding: 2rem;
+    border-radius: 50%; 
+    font-size: 18px;
+}
+
+#myBtn img {
+    position: absolute;
+    left: 17px;
+    top: 16px;
+    width: 2rem;
+}
+
+
 /* Desktop UI */
 
 /* Section Header */
@@ -610,6 +635,18 @@ footer p {
 
     body {
         padding: 3rem 5rem;
+    }
+
+    #myBtn {
+        width: 50px;
+        height: 50px;
+    }
+
+    #myBtn img {
+        position: absolute;
+        left: 14px;
+        top: 12px;
+        width: 2.5rem;
     }
 
     header {
@@ -1185,6 +1222,18 @@ footer p {
     body {
         position: relative;
         padding: 3rem 5rem;
+    }
+
+    #myBtn {
+        width: 50px;
+        height: 50px;
+    }
+
+    #myBtn img {
+        position: absolute;
+        left: 15.5px;
+        top: 15px;
+        width: 3rem;
     }
 
     header {
