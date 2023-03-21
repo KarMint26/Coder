@@ -1269,7 +1269,7 @@ footer p {
         position: absolute;
         right: 30px;
         top: 60px;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1284,6 +1284,7 @@ footer p {
     
     nav.active {
         opacity: 1;
+        display: flex;
     }
 
     nav a {
