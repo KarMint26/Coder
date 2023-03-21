@@ -1207,6 +1207,7 @@ footer p {
         font-weight: 600;
         margin-right: 1rem;
         color: #fff;
+        cursor: pointer;
     }
     
     header h1 {
