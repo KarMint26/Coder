@@ -40,26 +40,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
         mybutton.style.display = "block";
-        header.style.cssText = `
-            color: #fff;
-            background-color: #00c0ce;
-        `;
-        navList.forEach(nl => {
-            nl.style.cssText = `
-                color: #fff;
-            `;
-        });
     } else {
         mybutton.style.display = "none";
-        header.style.cssText = `
-            color: black;
-            background-color: transparent;
-        `;
-        navList.forEach(nl => {
-            nl.style.cssText = `
-                color: black;
-            `;
-        });
     }
 }
 
@@ -72,6 +54,10 @@ function topFunction() {
 // Loader Animation
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
-        document.querySelector(".loader-container").style.opacity = "0";
+        document.querySelector(".loader-container").style.cssText = `
+            z-index: -2;
+            opacity: 0;
+        `;
+        document.querySelector(".custom-loader").style.zIndex = "-1";
     }, 1000);
 });
