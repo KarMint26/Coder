@@ -72,10 +72,6 @@ function topFunction() {
 // Loader Animation
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
-        document.querySelector(".loader-container").style.cssText = `
-                opacity: 0;
-                z-index: -2;
-            `;
-        document.querySelector(".custom-loader").style.zIndex = "-1";
+        document.querySelector(".loader-container").style.opacity = "0";
     }, 1000);
 });
