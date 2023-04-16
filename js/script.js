@@ -26,6 +26,9 @@ humburger.addEventListener('click', () => {
     })
 })
 
+// Sticky navbar
+const header = document.querySelector("header");
+
 // Sticky Back To Top
 
 // Get the button:
@@ -35,10 +38,28 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
         mybutton.style.display = "block";
+        header.style.cssText = `
+            color: #fff;
+            background-color: #00c0ce;
+        `;
+        navList.forEach(nl => {
+            nl.style.cssText = `
+                color: #fff;
+            `;
+        });
     } else {
         mybutton.style.display = "none";
+        header.style.cssText = `
+            color: black;
+            background-color: transparent;
+        `;
+        navList.forEach(nl => {
+            nl.style.cssText = `
+                color: black;
+            `;
+        });
     }
 }
 

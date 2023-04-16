@@ -39,7 +39,7 @@ html {
 
 body {
     position: relative;
-    padding: 3rem 7rem 0 7rem;
+    padding: 2rem 7rem 0 7rem;
 }
 
 #myBtn {
@@ -112,7 +112,14 @@ body {
 /* Section Header */
 
 header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    padding: 1.5rem 7rem;
     display: flex;
+    background-color: #fff;
     justify-content: space-between;
     align-items: center;
 }
@@ -162,7 +169,7 @@ nav a::before {
 }
 
 nav a:first-child {
-    color: var(--primary-color);
+    color: black;
 }
 
 /* Section Home */
@@ -173,7 +180,8 @@ nav a:first-child {
     align-items: center;
     padding: 4rem 0;
     gap: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 11rem;
+    margin-top: 2rem;
 }
 
 /* LL */
